@@ -1,0 +1,14 @@
+class Solution {
+  public:
+    bool armstrongNumber(int n) {
+        int dig=to_string(n).size();
+        int sum=0;
+        int num=n;
+        while(n>0){
+            int last=n%10;
+            sum+=pow(last,dig);
+            n/=10;
+        }
+        return sum==num;
+    }
+};
