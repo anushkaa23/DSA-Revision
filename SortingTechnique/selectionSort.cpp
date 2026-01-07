@@ -1,8 +1,10 @@
-## Selection sort ##
-in selection short everytime the smallest number is picked and put on the right place in one iteration 
+// Selection sort ##
+// in selection short everytime the smallest number is picked and put on the right place in one iteration 
 
-##code##
-void selectionSort(vector<int>&arr,int n)
+// ##code##
+#include<bits/stdc++.h>
+using namespace std;
+void selectionSort(vector<int>&arr,int n){
   //traverse the array
   for(int i=0;i<n-1;i++){
     int minInd=i;
